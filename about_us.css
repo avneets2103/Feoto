@@ -1,0 +1,38 @@
+
+.about_us{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    top:50px;
+    right:130px;
+}
+
+.box{
+    text-align: center;
+    padding: 20px 5px;
+    right: 0;
+    top:35%;
+    bottom:0%;
+    background-color:#B6B5E7;
+    position: absolute;
+    width: 65%;
+    height: 90%;
+}
+
+.woman{
+    position: fixed;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.navbar{
+    padding-bottom:2.5rem;
+}
+
+nav{
+    position:fixed;
+    background-color: #B6B5E7;
+}

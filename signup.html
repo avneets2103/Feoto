@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+        #mainBox{
+            position: relative;
+            left:20%;
+            margin-top:5%;
+            float:left;
+            background-color: #f7a4a0;
+            height: 830px;
+            width:550px;
+            border: 6px solid black;
+            padding: 14px 33px 28px 28px;
+            font-size:medium;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        button{
+            margin-bottom: 3px;
+            height: 40px;
+            width:490px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgb(0, 128, 0,0.7);
+            border-radius: 5px;
+            margin-top:1px;
+            margin-bottom: 10px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+        label,span{
+            color: black;
+        }
+        body{
+            background-color: steelblue;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            background-image:url("bg.png");
+            top:20%;
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+        h1{
+            color:rgb(5, 2, 14);
+            width:350px;
+            padding-left: 12px;
+            margin-bottom: 2px;
+            font-weight:bolder;
+            font-size:40px;
+            left:20%;
+            text-align: center;
+        }
+
+        input,textarea,select{
+            width:490px;
+            margin-top:1px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            border-radius: 4.5px;
+        }
+        a{
+            background-color: blanchedalmond;
+            padding: 0px 5px 5px 5px;
+            border-radius:4.5px 4.5px 0px 0px ;
+            font-family: 'Acme', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid top" style="padding: 1% 5%; padding-bottom: 2.5rem">
+    <!-- <h1>Sign Up</h1> -->
+    <form action="index.html">
+        <div id="mainBox">
+            <h1>Sign Up</h1> 
+            <span id="required" > * fields are required </span>  <br>
+
+            <label for="myName">NAME *</label>
+
+            <div> 
+                <input style="text-transform: capitalize ;" type="text" name="myName" required>
+            </div>
+
+            <label for="myEmail">EMAIL *</label>
+
+            <div>
+                <input type="email" name="myEmail" required>
+            </div>
+
+            <label for="birthday">Birthday:</label>
+            <div>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            
+            <label for="myMob">Your Mobile Number (+91)</label>
+            <div>
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" name="myMob">
+            </div>
+
+            <label for="ec1">Emergency Contact Number 1 (+91)*</label>
+            <div>
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" name="ec1" required>
+            </div>
+
+            <label for="ec2">Emergency Contact Number 2 (+91)</label>
+            <div>
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" name="ec2" required>
+            </div>
+
+            <label for="createpass">Create Password *</label>
+
+            <div> 
+                <input style="text-transform: capitalize ;" type="password" name="createpass" required>
+            </div>
+
+            <label for="bloodgrp" >Blood Group * </label><br>
+            <select>
+                <option disabled="disabled" selected="selected">Choose an option</option >
+                <option>A Positive</option>
+                <option>A Negative</option>
+                <option>A Unknown</option>
+                <option>B Positive</option>
+                <option>B Negative</option>
+                <option>B Unknown</option>
+                <option>AB Positive</option>
+                <option>AB Negative</option>
+                <option>AB Unknown</option>
+                <option>O Positive</option>
+                <option>O Negative</option>
+                <option>O Unknown</option>
+                <option>Unknown</option>
+            </select>
+
+            <label for="address" >Address</label>
+
+            <div>
+                <textarea  cols="60" rows="2" name="suggest" ></textarea>
+            </div> 
+
+            <label for="myRole" >Which option best describes your current role? * </label><br>
+
+            <div>
+                <select name="myRole" id="myRole" required>
+                    <option disabled="disabled" selected="selected">Choose an option</option >
+                    <option value="Provisoner" >I am Provisoner</option>
+                    <option value="currently" >I am currently pregnant</option>
+                    <option value="already">I am already a parent</option>
+                </select>
+            </div>
+
+            <button type="submit" onclick="showAlert()">SUBMIT NOW</button>
+            <script>
+                function showAlert() {
+                  alert ("You have been successfully signed up");
+                }
+            </script>
+            <!-- <a href="https://instagram.com/aresrobotics.nsut?utm_medium=copy_link" target="_blank">Click to visit our Instagram Handle </a>  -->
+            
+        </div> 
+    </form>    
+</body>
+</html>
